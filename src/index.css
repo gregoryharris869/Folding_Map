@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    background: hsl(222, 53%, 24%);
+  }
+}
+
+@layer components {
+  .map-image {
+    background-image: url("./assets/lse-library.webp");
+    background-size: 300%;
+  }
+  .map-image:nth-child(2) {
+    background-position: 50%;
+  }
+  .map-image:nth-child(3) {
+    background-position: 100%;
+  }
+}
